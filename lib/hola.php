@@ -1,7 +1,7 @@
 <?php
 // Autor: Guillermo Vidal <g.vidalfrasquet@edu.gva.es>
-// El nom per defecte és Món
-$nombre = isset($argv[1]) ? $argv[1] : "Món";
-@print "Hola {$nombre}\n";
+print "Introdueix el teu nom:";
+$nombre = trim(fgets(STDIN));
+@print "Hola, {$nombre}\n";
 ?>
 
